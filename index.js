@@ -14,22 +14,18 @@ document.getElementById('total').innerText = ''
 const firstClassTicket = 150
 const economyTicket = 100
 
-//increase first class ticket
 increaseButtonFirstClass.addEventListener('click', () => {
     handleTicket('first-class-input',true, firstClassTicket)
 })
 
-//increase economy ticket
 increaseBtnEconomy.addEventListener('click', () => {
     handleTicket("economy-input",true,economyTicket)
 })
 
-//decrease first class ticket
 decreaseBtnFirstClass.addEventListener('click', () => {
     handleTicket('first-class-input',false,firstClassTicket)
 })
 
-//decrease economy ticket
 decreaseBtnEconomy.addEventListener('click', () => {
     handleTicket("economy-input",false, economyTicket)
 })
@@ -65,8 +61,8 @@ function calculate() {
     document.getElementById('total').innerText = total
 }
 
+//bokking function
 const bookingBtn = document.getElementById('booking-btn')
-
 bookingBtn.addEventListener('click', () => {
     const allSection = document.querySelector('.all-section')
     allSection.style.display = 'none'
